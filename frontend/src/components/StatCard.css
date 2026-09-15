@@ -1,0 +1,102 @@
+.stat-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .stat-card {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stat-icon {
+  font-size: 2rem;
+}
+
+.stat-content h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+body.dark-mode .stat-content h4 {
+  color: #d1d5db;
+}
+
+.stat-value {
+  margin: 0.5rem 0 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+body.dark-mode .stat-value {
+  color: #e4e6eb;
+}
+
+.stat-primary .stat-icon {
+  background: #eef2ff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+body.dark-mode .stat-primary .stat-icon {
+  background: #312e81;
+}
+
+.stat-success .stat-icon {
+  background: #ecfdf5;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+body.dark-mode .stat-success .stat-icon {
+  background: #064e3b;
+}
+
+.stat-warning .stat-icon {
+  background: #fffbeb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+body.dark-mode .stat-warning .stat-icon {
+  background: #78350f;
+}
+
+.stat-danger .stat-icon {
+  background: #fee2e2;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+body.dark-mode .stat-danger .stat-icon {
+  background: #7f1d1d;
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
