@@ -1,0 +1,160 @@
+.navbar {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  sticky: top 0;
+  z-index: 1000;
+}
+
+body.dark-mode .navbar {
+  background: #1f2937;
+  border-bottom-color: #374151;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin: 0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  margin-top: 0.5rem;
+}
+
+body.dark-mode .menu-dropdown {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+.menu-header {
+  padding: 1rem;
+}
+
+.menu-header p {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.menu-header small {
+  color: #6b7280;
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+body.dark-mode .menu-header small {
+  color: #9ca3af;
+}
+
+.menu-dropdown hr {
+  margin: 0.5rem 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+body.dark-mode .menu-dropdown hr {
+  border-top-color: #4b5563;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  transition: background 0.2s;
+}
+
+body.dark-mode .menu-item {
+  color: #e4e6eb;
+}
+
+.menu-item:hover {
+  background: #f3f4f6;
+}
+
+body.dark-mode .menu-item:hover {
+  background: #4b5563;
+}
+
+.menu-item.danger {
+  color: #ef4444;
+}
+
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.25rem;
+  }
+
+  .navbar-actions {
+    gap: 1rem;
+  }
+}
